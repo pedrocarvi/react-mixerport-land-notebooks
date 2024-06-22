@@ -53,8 +53,8 @@ function App() {
           <h2> Ellos ya confiaron en Mixerport </h2>
           <h3> Testimonios de nuestros clientes </h3>
           <p> Trabajamos arduamente para superar las expectativas. </p>
-          <GoogleReviews />
         </div>
+        <GoogleReviews />
       </div>
       <div className="section contacto">
         <div className="section-sub-container">

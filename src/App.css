@@ -75,6 +75,7 @@ p {
   border-radius: 50px;
   outline: none;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 /* o video-background */

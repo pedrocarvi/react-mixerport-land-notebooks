@@ -1,46 +1,3 @@
-// import React, { useEffect, useState } from 'react';
-// import axios from 'axios';
-
-// const GoogleReviews = () => {
-//     const [reviews, setReviews] = useState([]);
-
-//     useEffect(() => {
-//         const fetchReviews = async () => {
-//             try {
-//                 const response = await axios.get('https://express-mixer-land.vercel.app/api/place-details');
-//                 if (response) {
-//                     // console.log(response.data)
-//                     setReviews(response.data.reviews)
-//                 }
-//             } catch (error) {
-//                 console.error('Error fetching reviews:', error);
-//             }
-//         };
-
-//         fetchReviews();
-//     }, []);
-
-//     return (
-//         <div>
-//             <p>Google Reviews</p>
-//             {reviews.length > 0 ? (
-//                 <ul>
-//                     {reviews.map((review, index) => (
-//                         <li key={index}>
-//                             <p><strong>{review.author_name}</strong>: {review.text}</p>
-//                             <p>Rating: {review.rating}</p>
-//                         </li>
-//                     ))}
-//                 </ul>
-//             ) : (
-//                 <p>No reviews found.</p>
-//             )}
-//         </div>
-//     );
-// };
-
-// export default GoogleReviews;
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './GoogleReviews.css';
@@ -56,7 +13,6 @@ const GoogleReviews = () => {
             try {
                 const response = await axios.get('https://express-mixer-land.vercel.app/api/place-details');
                 if (response) {
-                    console.log(response.data.reviews)
                     setReviews(response.data.reviews);
                 }
             } catch (error) {

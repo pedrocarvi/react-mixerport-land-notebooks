@@ -51,4 +51,9 @@
     border-radius: 50px;
     outline: none;
     margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-contact:hover {
+    background-color: rgb(149, 64, 228);
 }

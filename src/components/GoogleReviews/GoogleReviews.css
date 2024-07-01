@@ -105,3 +105,16 @@
     color: gold;
     margin-right: 2px;
 }
+
+@media screen and (max-width: 500px) {
+    .review-card {
+        width: 350px;
+        max-width: 350px;
+        min-height: 350px;
+    }
+
+    .slick-track {
+        display: flex !important;
+        gap: 20px;
+    }
+}

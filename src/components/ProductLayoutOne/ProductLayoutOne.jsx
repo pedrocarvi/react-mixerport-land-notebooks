@@ -8,7 +8,7 @@ const ProductLayoutOne = ({ title, subtitle, description, imageSrc }) => {
                 <h3>{title}</h3>
                 <p>{description}</p>
                 <button className='btn-info'>Más información</button>
-                <img src={imageSrc} alt={`${title.toLowerCase().replace(/ /g, '-')}`} width={500} />
+                <img src={imageSrc} alt={`${title.toLowerCase().replace(/ /g, '-')}`} className='product-image' />
             </div>
         </div>
     );

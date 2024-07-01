@@ -67,7 +67,7 @@ function App() {
           <ContactForm />
         </div>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6568.169847147494!2d-58.37316200000001!3d-34.602014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbf5082dee1d%3A0x87396e43d668cc41!2sMixerport%20Importaciones!5e0!3m2!1ses!2sar!4v1718992688974!5m2!1ses!2sar" className='maps-iframe' loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6568.169847147494!2d-58.37316200000001!3d-34.602014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbf5082dee1d%3A0x87396e43d668cc41!2sMixerport%20Importaciones!5e0!3m2!1ses!2sar!4v1718992688974!5m2!1ses!2sar" className='maps-iframe' loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='google-maps'></iframe>
       <div className="footer">
         <div className="footer-sub-container">
           <img src={LogoImage} alt="logo-mixer" width={140} />

@@ -57,3 +57,11 @@
 .btn-contact:hover {
     background-color: rgb(149, 64, 228);
 }
+
+@media screen and (max-width: 500px) {
+    .contact-form {
+        max-width: 500px;
+        width: 360px;
+        padding: 0px;
+    }
+}

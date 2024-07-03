@@ -3,8 +3,8 @@ import LogoImage from './assets/logo-mixer.png'
 import HeroVideo from './assets/hero_video.mp4'
 import LenovoLoq from './assets/lenovo_loq.png'
 import LenovoLegion from './assets/lenovo_legion.png'
-import HpVictus from './assets/hp_victus.png'
-import AsusTuf1 from './assets/asus_tuf.png'
+import HpVictus from './assets/hp_victus_2.png'
+import AsusTuf1 from './assets/asus_tuf_2.png'
 import GoogleReviews from './components/GoogleReviews/GoogleReviews';
 import ProductLayoutOne from './components/ProductLayoutOne/ProductLayoutOne';
 import ContactForm from './components/ContactForm/ContactForm';
@@ -15,7 +15,7 @@ import MailIcon from './assets/sms-edit.png'
 function App() {
   return (
     <div className="App">
-      <video autoPlay muted loop id="video-background">
+      <video autoPlay muted loop playsInline id="video-background">
         <source src={HeroVideo} type="video/mp4" />
       </video>
       {/* <img src={HeroVideo} alt="background" id="gif-background" /> */}
@@ -28,25 +28,25 @@ function App() {
         </div>
       </div>
       <ProductLayoutOne
-        title='LENOVO LOQ 82XT001NUS'
+        title='LENOVO LOQ'
         subtitle='Potencia y portabilidad en un diseño compacto'
         description='Con AMD Ryzen 7 y NVIDIA GeForce RTX 4050, disfruta de un rendimiento excepcional en cualquier lugar.'
         imageSrc={LenovoLoq}
       />
       <ProductLayoutOne
-        title='LENOVO LEGION 83EF0002US'
+        title='LENOVO LEGION'
         subtitle='Rendimiento extremo con pantalla WQHD de 165Hz'
         description='Impulsado por AMD Ryzen 7 y NVIDIA GeForce RTX 4060, ofrece gráficos impresionantes y juegos fluidos. 16GB de RAM y SSD de 512GB aseguran un rendimiento excepcional.'
         imageSrc={LenovoLegion}
       />
       <ProductLayoutOne
-        title='HP VICTUS 16-R0085CL'
+        title='HP VICTUS'
         subtitle='Rendimiento robusto con pantalla de 144Hz'
         description='Equipado con Intel Core i7 y NVIDIA GeForce RTX 4070, brinda una experiencia de juego de primera clase. Con 16GB de RAM y SSD de 1TB para un almacenamiento amplio y rápido.'
         imageSrc={HpVictus}
       />
       <ProductLayoutOne
-        title='ASUS TUF FX507VV-BH96'
+        title='ASUS TUF'
         subtitle='Potencia extrema con diseño resistente'
         description='Con Intel Core i9 y NVIDIA GeForce RTX 4060, ofrece un rendimiento excepcional para juegos exigentes. 32GB de RAM y SSD de 1TB aseguran velocidad y capacidad.'
         imageSrc={AsusTuf1}

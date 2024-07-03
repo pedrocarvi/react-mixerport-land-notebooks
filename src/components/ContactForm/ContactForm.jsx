@@ -29,33 +29,46 @@ const ContactForm = () => {
     return (
         <div>
             <form onSubmit={onSubmit} className='contact-form'>
-                <input
-                    type="text"
-                    name="nombre"
-                    placeholder='Nombre'
-                    autoComplete='off'
-                    required
-                />
-                <input
-                    type="email"
-                    name="mail"
-                    placeholder='Email'
-                    autoComplete='off'
-                    required
-                />
-                <input
-                    type="tel"
-                    name="telefono"
-                    placeholder='Nro. de telefono'
-                    autoComplete='off'
-                />
-                <textarea
-                    name="mensaje"
-                    placeholder='Mensaje'
-                    required
-                />
+                <div className="field-container">
+                    <label htmlFor="nombre">Nombre</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        autoComplete='off'
+                        required
+                    />
+                </div>
+                <div className="field-container">
+                    <label htmlFor="mail">Email</label>
+                    <input
+                        type="email"
+                        id="mail"
+                        name="mail"
+                        autoComplete='off'
+                        required
+                    />
+                </div>
+                <div className="field-container">
+                    <label htmlFor="telefono">Nro. de telefono</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        autoComplete='off'
+                    />
+                </div>
+                <div className="field-container">
+                    <label htmlFor="mensaje">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        required
+                    />
+                </div>
                 <button type="submit" className='btn-contact'>Enviar</button>
             </form>
+
         </div>
     )
 }

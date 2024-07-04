@@ -1,16 +1,21 @@
 import './App.css';
+// Components
+import GoogleReviews from './components/GoogleReviews/GoogleReviews';
+import ProductLayoutOne from './components/ProductLayoutOne/ProductLayoutOne';
+import WhatsAppButton from './components/WhatsappButton/WhatsappButton';
+
+// Assets
 import LogoImage from './assets/logo-mixer.png'
 import HeroVideo from './assets/hero_video.mp4'
 import LenovoLoq from './assets/lenovo_loq.png'
 import LenovoLegion from './assets/lenovo_legion.png'
 import HpVictus from './assets/hp_victus_2.png'
 import AsusTuf1 from './assets/asus_tuf_2.png'
-import GoogleReviews from './components/GoogleReviews/GoogleReviews';
-import ProductLayoutOne from './components/ProductLayoutOne/ProductLayoutOne';
 import ContactForm from './components/ContactForm/ContactForm';
 import LocationIcon from './assets/location.png'
 import PhoneIcon from './assets/call.png'
 import MailIcon from './assets/sms-edit.png'
+import A24Image from './assets/nota_a24_2.png'
 
 function App() {
   return (
@@ -30,27 +35,40 @@ function App() {
       <ProductLayoutOne
         title='LENOVO LOQ'
         subtitle='Potencia y portabilidad en un diseño compacto'
-        description='Con AMD Ryzen 7 y NVIDIA GeForce RTX 4050, disfruta de un rendimiento excepcional en cualquier lugar.'
+        description='Modelo 82XT001NUS • AMD Ryzen 7 7840HS • 8GB RAM • 512GB Almacenamiento • NVIDIA GEFORCE RTX 4050 6GB VRAM • 15.6 (1920 X 1080) FULL HD SCREEN • Windows 11'
         imageSrc={LenovoLoq}
       />
       <ProductLayoutOne
         title='LENOVO LEGION'
         subtitle='Rendimiento extremo con pantalla WQHD de 165Hz'
-        description='Impulsado por AMD Ryzen 7 y NVIDIA GeForce RTX 4060, ofrece gráficos impresionantes y juegos fluidos. 16GB de RAM y SSD de 512GB aseguran un rendimiento excepcional.'
+        description='Modelo 83EF0002US • AMD Ryzen 7 7735H • 16GB RAM • 512GB Almacenamiento • NVIDIA GEFORCE RTX 4060 8GB VRAM •  15.6" WQHD 165HZ SCREEN • Windows 11'
         imageSrc={LenovoLegion}
       />
       <ProductLayoutOne
         title='HP VICTUS'
         subtitle='Rendimiento robusto con pantalla de 144Hz'
-        description='Equipado con Intel Core i7 y NVIDIA GeForce RTX 4070, brinda una experiencia de juego de primera clase. Con 16GB de RAM y SSD de 1TB para un almacenamiento amplio y rápido.'
+        description='Modelo 16-R0085CL • Intel Core I7-13700H • 16GB RAM • 1TB Almacenamiento • NVIDIA GEFORCE RTX 4070 8GB VRAM • 16.1" MICRO-EDGE IPS FHD (1920 X 1080) 250-NITS 144HZ SCREEN'
         imageSrc={HpVictus}
       />
       <ProductLayoutOne
         title='ASUS TUF'
         subtitle='Potencia extrema con diseño resistente'
-        description='Con Intel Core i9 y NVIDIA GeForce RTX 4060, ofrece un rendimiento excepcional para juegos exigentes. 32GB de RAM y SSD de 1TB aseguran velocidad y capacidad.'
+        description='Modelo FX507VV-BH96 • Intel Core I9-13900H • 32GB RAM • 1TB Almacenamiento • NVIDIA® GEFORCE RTX™ 4060 8GB VRAM • 15.6" IPS ANTI-GLARE FHD (1920 X 1080) 144HZ • Windows 11'
         imageSrc={AsusTuf1}
       />
+      <div className="section-nota">
+        <div className="section-sub-container">
+          <h2> Nota para A24 </h2>
+          <h3> Mixerport en los medios </h3>
+          <p> Les compartimos la nota publicada sobre Mixerport BA, Gracias a A24 por destacar nuestro trabajo y permitirnos compartir nuestra historia. </p>
+          <a href="https://www.a24.com/tecnologia/mixerport-ba-la-vision-fabio-lubnicki-el-mercado-tecnologia-argentina-n1306742">
+            <img src={A24Image} alt="Nota para A24" width={800} className='a24-image' />
+          </a>
+          <a href="https://www.a24.com/tecnologia/mixerport-ba-la-vision-fabio-lubnicki-el-mercado-tecnologia-argentina-n1306742">
+            <button className='btn-info'> Ver nota </button>
+          </a>
+        </div>
+      </div>
       <div className="section-reviews">
         <div className="section-sub-container">
           <h2> Ellos ya confiaron en Mixerport </h2>
@@ -58,6 +76,7 @@ function App() {
           <p> Trabajamos arduamente para superar las expectativas. </p>
         </div>
         <GoogleReviews />
+        <button className='btn-info'> Ver todos las reseñas </button>
       </div>
       <div className="section contacto">
         <div className="section-sub-container">
@@ -85,6 +104,7 @@ function App() {
           </div>
         </div>
       </div>
+      <WhatsAppButton />
     </div>
   );
 }

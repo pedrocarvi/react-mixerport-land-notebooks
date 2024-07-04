@@ -6,7 +6,7 @@ const ProductLayoutOne = ({ title, subtitle, description, imageSrc }) => {
             <div className="section-sub-container">
                 <h2>{subtitle}</h2>
                 <h3>{title}</h3>
-                <p>{description}</p>
+                <p className='product-description'>{description}</p>
                 <button className='btn-info'>Más información</button>
                 <img src={imageSrc} alt={`${title.toLowerCase().replace(/ /g, '-')}`} className='product-image' />
             </div>

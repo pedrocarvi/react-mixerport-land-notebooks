@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 20px;
 }
 
 .product {
@@ -61,6 +61,11 @@ h3 {
 p {
   font-size: 20px;
   text-align: center;
+}
+
+.product-description {
+  font-size: 18px;
+  line-height: 34px;
 }
 
 .btn-info {
@@ -112,6 +117,31 @@ p {
   z-index: 1;
 }
 
+.section-nota {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 40px 0px 0px 0px;
+  height: fit-content;
+}
+
+.section-nota .section-sub-container {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-nota .section-sub-container p {
+  max-width: 900px;
+}
+
 .section-reviews {
   display: flex;
   flex-direction: column;
@@ -120,12 +150,12 @@ p {
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
-  padding: 100px 0px;
+  padding: 80px 0px;
   height: fit-content;
 }
 
 .section-reviews .section-sub-container p {
-  margin: 40px 0px 0px 0px;
+  margin-top: 40px;
 }
 
 .maps-iframe {
@@ -159,6 +189,23 @@ p {
 @media screen and (max-width: 500px) {
 
   .section {
+    padding: 40px 20px;
+  }
+
+  .hero-section {
+    max-height: 600px;
+  }
+
+  .product-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .a24-image {
+    width: 100%;
+  }
+
+  .section-nota {
     padding: 40px 20px;
   }
 

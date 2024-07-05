@@ -1,4 +1,6 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './ContactForm.css'
 
 const ContactForm = () => {
@@ -22,12 +24,32 @@ const ContactForm = () => {
         }).then((res) => res.json());
 
         if (res.success) {
-            console.log("Success", res);
+            toast.success("Mensaje enviado correctamente. Nos comunicaremos pronto!", {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+            event.target.reset();
+        } else {
+            toast.error("Error al enviar el mensaje", {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
         }
     };
 
     return (
         <div>
+            <ToastContainer />
             <form onSubmit={onSubmit} className='contact-form'>
                 <div className="field-container">
                     <label htmlFor="nombre">Nombre</label>

@@ -29,7 +29,9 @@ function App() {
           <img src={LogoImage} alt="logo" width={120} />
           <h1>Computadoras gaming <br /> <span style={{ fontWeight: '400' }}>de la más alta calidad.</span></h1>
           <p>Todo lo que necesitás, lo encontrás en Mixerport.</p>
-          <button className='btn-info'>Más información</button>
+          <a href="wa.link/sebv41">
+            <button className='btn-info'>Más información</button>
+          </a>
         </div>
       </div>
       <ProductLayoutOne
@@ -37,26 +39,30 @@ function App() {
         subtitle='Potencia y portabilidad en un diseño compacto'
         description='Modelo 82XT001NUS • AMD Ryzen 7 7840HS • 8GB RAM • 512GB Almacenamiento • NVIDIA GEFORCE RTX 4050 6GB VRAM • 15.6 (1920 X 1080) FULL HD SCREEN • Windows 11'
         imageSrc={LenovoLoq}
+        productRoute='https://mixerport.com/producto/lenovo-loq/'
       />
       <ProductLayoutOne
         title='LENOVO LEGION'
         subtitle='Rendimiento extremo con pantalla WQHD de 165Hz'
         description='Modelo 83EF0002US • AMD Ryzen 7 7735H • 16GB RAM • 512GB Almacenamiento • NVIDIA GEFORCE RTX 4060 8GB VRAM •  15.6" WQHD 165HZ SCREEN • Windows 11'
         imageSrc={LenovoLegion}
+        productRoute='https://mixerport.com/producto/lenovo-legion/'
       />
       <ProductLayoutOne
         title='HP VICTUS'
         subtitle='Rendimiento robusto con pantalla de 144Hz'
         description='Modelo 16-R0085CL • Intel Core I7-13700H • 16GB RAM • 1TB Almacenamiento • NVIDIA GEFORCE RTX 4070 8GB VRAM • 16.1" MICRO-EDGE IPS FHD (1920 X 1080) 250-NITS 144HZ SCREEN'
         imageSrc={HpVictus}
+        productRoute='https://mixerport.com/producto/hp-victus/'
       />
       <ProductLayoutOne
         title='ASUS TUF'
         subtitle='Potencia extrema con diseño resistente'
         description='Modelo FX507VV-BH96 • Intel Core I9-13900H • 32GB RAM • 1TB Almacenamiento • NVIDIA® GEFORCE RTX™ 4060 8GB VRAM • 15.6" IPS ANTI-GLARE FHD (1920 X 1080) 144HZ • Windows 11'
         imageSrc={AsusTuf1}
+        productRoute='https://mixerport.com/producto/asus-tuf/'
       />
-      <div className="section-nota">
+      {/* <div className="section-nota">
         <div className="section-sub-container">
           <h2> Nota para A24 </h2>
           <h3> Mixerport en los medios </h3>
@@ -68,7 +74,7 @@ function App() {
             <button className='btn-info'> Ver nota </button>
           </a>
         </div>
-      </div>
+      </div> */}
       <div className="section-reviews">
         <div className="section-sub-container">
           <h2> Ellos ya confiaron en Mixerport </h2>
@@ -76,7 +82,9 @@ function App() {
           <p> Trabajamos arduamente para superar las expectativas. </p>
         </div>
         <GoogleReviews />
-        <button className='btn-info'> Ver todos las reseñas </button>
+        <a href="https://www.google.com/maps/place/Mixerport+Importaciones/@-34.6020142,-58.3731623,15z/data=!4m8!3m7!1s0x95bccbf5082dee1d:0x87396e43d668cc41!8m2!3d-34.6020142!4d-58.3731623!9m1!1b1!16s%2Fg%2F11t7hb6kdm?entry=ttu" target='_blank'>
+          <button className='btn-info'> Ver todos las reseñas </button>
+        </a>
       </div>
       <div className="section contacto">
         <div className="section-sub-container">

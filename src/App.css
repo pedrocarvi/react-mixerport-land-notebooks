@@ -186,6 +186,10 @@ p {
   gap: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 500px) {
 
   .section {

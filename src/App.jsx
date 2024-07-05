@@ -29,7 +29,7 @@ function App() {
           <img src={LogoImage} alt="logo" width={120} />
           <h1>Computadoras gaming <br /> <span style={{ fontWeight: '400' }}>de la más alta calidad.</span></h1>
           <p>Todo lo que necesitás, lo encontrás en Mixerport.</p>
-          <a href="wa.link/sebv41">
+          <a href="https://wa.link/sebv41" target='_blank'>
             <button className='btn-info'>Más información</button>
           </a>
         </div>

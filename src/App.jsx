@@ -30,7 +30,7 @@ function App() {
           <h1>Computadoras gaming <br /> <span style={{ fontWeight: '400' }}>de la más alta calidad.</span></h1>
           <p>Todo lo que necesitás, lo encontrás en Mixerport.</p>
           <a href="https://wa.link/sebv41" target='_blank'>
-            <button className='btn-info'>Más información</button>
+            <button className='btn-info'> Ver productos </button>
           </a>
         </div>
       </div>

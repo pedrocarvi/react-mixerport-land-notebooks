@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductLayoutOne = ({ title, subtitle, description, imageSrc, productRoute }) => {
+const ProductLayoutOne = ({ id, title, subtitle, description, imageSrc, productRoute }) => {
     return (
         <div className="section product">
             <div className="section-sub-container">
@@ -8,7 +8,7 @@ const ProductLayoutOne = ({ title, subtitle, description, imageSrc, productRoute
                 <h3>{title}</h3>
                 <p className='product-description'>{description}</p>
                 <a href={productRoute} target='_blank'>
-                    <button className='btn-info'>Más información</button>
+                    <button className='btn-info' id={id}>Más información</button>
                 </a>
                 <img src={imageSrc} alt={`${title.toLowerCase().replace(/ /g, '-')}`} className='product-image' />
             </div>

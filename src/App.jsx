@@ -35,32 +35,36 @@ function App() {
         </div>
       </div>
       <ProductLayoutOne
+        id='btn-prod-1'
         title='LENOVO LOQ'
         subtitle='Potencia y portabilidad en un diseño compacto'
         description='Modelo 82XT001NUS • AMD Ryzen 7 7840HS • 8GB RAM • 512GB Almacenamiento • NVIDIA GEFORCE RTX 4050 6GB VRAM • 15.6 (1920 X 1080) FULL HD SCREEN • Windows 11'
         imageSrc={LenovoLoq}
-        productRoute='https://wa.link/sebv41"'
+        productRoute='https://api.whatsapp.com/send?phone=541128859227&text=Hola!%20%F0%9F%91%8B%20Me%20gustar%C3%ADa%20hacerles%20una%20consulta%20sobre%20una%20notebook%20gamer'
       />
       <ProductLayoutOne
+        id='btn-prod-2'
         title='LENOVO LEGION'
         subtitle='Rendimiento extremo con pantalla WQHD de 165Hz'
         description='Modelo 83EF0002US • AMD Ryzen 7 7735H • 16GB RAM • 512GB Almacenamiento • NVIDIA GEFORCE RTX 4060 8GB VRAM •  15.6" WQHD 165HZ SCREEN • Windows 11'
         imageSrc={LenovoLegion}
-        productRoute='https://wa.link/sebv41"'
+        productRoute='https://api.whatsapp.com/send?phone=541128859227&text=Hola!%20%F0%9F%91%8B%20Me%20gustar%C3%ADa%20hacerles%20una%20consulta%20sobre%20una%20notebook%20gamer'
       />
       <ProductLayoutOne
+        id='btn-prod-3'
         title='HP VICTUS'
         subtitle='Rendimiento robusto con pantalla de 144Hz'
         description='Modelo 16-R0085CL • Intel Core I7-13700H • 16GB RAM • 1TB Almacenamiento • NVIDIA GEFORCE RTX 4070 8GB VRAM • 16.1" MICRO-EDGE IPS FHD (1920 X 1080) 250-NITS 144HZ SCREEN'
         imageSrc={HpVictus}
-        productRoute='https://wa.link/sebv41"'
+        productRoute='https://api.whatsapp.com/send?phone=541128859227&text=Hola!%20%F0%9F%91%8B%20Me%20gustar%C3%ADa%20hacerles%20una%20consulta%20sobre%20una%20notebook%20gamer'
       />
       <ProductLayoutOne
+        id='btn-prod-4'
         title='ASUS TUF'
         subtitle='Potencia extrema con diseño resistente'
         description='Modelo FX507VV-BH96 • Intel Core I9-13900H • 32GB RAM • 1TB Almacenamiento • NVIDIA® GEFORCE RTX™ 4060 8GB VRAM • 15.6" IPS ANTI-GLARE FHD (1920 X 1080) 144HZ • Windows 11'
         imageSrc={AsusTuf1}
-        productRoute='https://wa.link/sebv41"'
+        productRoute='https://api.whatsapp.com/send?phone=541128859227&text=Hola!%20%F0%9F%91%8B%20Me%20gustar%C3%ADa%20hacerles%20una%20consulta%20sobre%20una%20notebook%20gamer'
       />
       {/* <div className="section-nota">
         <div className="section-sub-container">

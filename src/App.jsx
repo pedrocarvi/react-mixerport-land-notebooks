@@ -30,7 +30,7 @@ function App() {
           <h1>Computadoras gaming <br /> <span style={{ fontWeight: '400' }}>de la más alta calidad.</span></h1>
           <p>Todo lo que necesitás, lo encontrás en Mixerport.</p>
           <a href="https://mixerport.com" target='_blank'>
-            <button className='btn-info'> Mas información </button>
+            <button className='btn-info' id='btn-info-1'> Mas información </button>
           </a>
         </div>
       </div>
@@ -87,7 +87,7 @@ function App() {
         </div>
         <GoogleReviews />
         <a href="https://www.google.com/maps/place/Mixerport+Importaciones/@-34.6020142,-58.3731623,15z/data=!4m8!3m7!1s0x95bccbf5082dee1d:0x87396e43d668cc41!8m2!3d-34.6020142!4d-58.3731623!9m1!1b1!16s%2Fg%2F11t7hb6kdm?entry=ttu" target='_blank'>
-          <button className='btn-info'> Ver todos las reseñas </button>
+          <button className='btn-info' id='btn-resenias'> Ver todos las reseñas </button>
         </a>
       </div>
       <div className="section contacto">

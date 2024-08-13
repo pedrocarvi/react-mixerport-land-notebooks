@@ -8,11 +8,14 @@ const WhatsAppButton = () => {
 
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
 
+    const handleClick = () => {
+        window.open(whatsappUrl, '_blank');
+    };
 
     return (
-        <a href={whatsappUrl} className="whatsapp-button" target="_blank" rel="noopener noreferrer" id='whatsapp-float-button'>
+        <button className="whatsapp-button" onClick={handleClick} id='whatsapp-float-button'>
             <img src={WhatsappIcon} alt="WhatsApp" width={40} />
-        </a>
+        </button>
     );
 };
 

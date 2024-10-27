@@ -118,3 +118,15 @@
         gap: 20px;
     }
 }
+
+.section-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 80px 0px;
+    height: fit-content;
+  }
